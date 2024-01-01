@@ -107,15 +107,7 @@ export const defaultExtensions = [
       class: "novel-rounded-lg novel-border novel-border-stone-200",
     },
   }),
-  Placeholder.configure({
-    placeholder: ({ node }) => {
-      if (node.type.name === "heading") {
-        return `Heading ${node.attrs.level}`;
-      }
-      return "Press '/' for commands, or '++' for AI autocomplete...";
-    },
-    includeChildren: true,
-  }),
+
   SlashCommand,
   TiptapUnderline,
   TextStyle,
